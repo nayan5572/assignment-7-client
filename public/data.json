@@ -1,0 +1,74 @@
+[
+    {
+        "id": "12345",
+        "cover": "https://i.ibb.co/MgTmKhp/Rectangle-2-2.png",
+        "title": "Introduction to C Programming",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "price": 1500,
+        "credit_hours": 2
+    },
+    {
+        "id": "67890",
+        "cover": "https://i.ibb.co/VMJXfXS/Rectangle-2-3.png",
+        "title": "Introduction to Algorithms",
+        "description": "Join the crew of the starship Phoenix as they venture into the far reaches of the universe, encountering alien civilizations and cosmic mysteries.",
+        "price": "$24.99",
+        "credit_hours": 1
+    },
+    {
+        "id": "24680",
+        "cover": "https://i.ibb.co/6H7y2ct/Rectangle-2-4.png",
+        "title": "Introduction to C++ for DSA",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "price": 25000,
+        "credit_hours": 2
+    },
+    {
+        "id": "13579",
+        "cover": "https://i.ibb.co/NKDPQ10/Rectangle-3.png",
+        "title": "Basic Data Structures",
+        "description": "Unlock the secrets of gourmet cooking with this comprehensive guide to creating mouthwatering dishes that will impress your guests.",
+        "price": 1000,
+        "credit_hours": 10
+    },
+    {
+        "id": "98765",
+        "cover": "https://i.ibb.co/HKKVrgM/Rectangle-2.png",
+        "title": "Introduction to OOP Python",
+        "description": "Travel back in time with this historical exploration of ancient civilizations, epic battles, and the rise and fall of empires.",
+        "price": 35000,
+        "credit_hours": 5
+    },
+    {
+        "id": "54321",
+        "cover": "https://i.ibb.co/sKqHKFp/Rectangle-2-5.png",
+        "title": "Software Engineering",
+        "description": "Delve into the fascinating world of neuroscience and psychology to unravel the complexities of human behavior and consciousness.",
+        "price": 19000,
+        "credit_hours": 5
+    },
+    {
+        "id": "11223",
+        "cover": "https://i.ibb.co/t3cVzFJ/Rectangle-3-1.png",
+        "title": "AWS, Cloud Computing",
+        "description": "Join Alice on a whimsical journey through Wonderland, where she encounters peculiar creatures and surreal landscapes.",
+        "price": 23000,
+        "credit_hours": 2
+    },
+    {
+        "id": "998877",
+        "cover": "https://i.ibb.co/3vsP350/Rectangle-2-1.png",
+        "title": "Database (MySQL)",
+        "description": "Learn the art of financial success with expert advice on investing, budgeting, and building a secure financial future.",
+        "price": "$34.99",
+        "credit_hours": 4
+    },
+    {
+        "id": "55555",
+        "cover": "https://i.ibb.co/c3f09gp/Rectangle-2-6.png",
+        "title": "Problem-Solving Part",
+        "description": "Embark on thrilling hiking expeditions to remote wilderness areas and discover the breathtaking beauty of the natural world.",
+        "price": "$26.99",
+        "credit_hours": 2
+    }
+]
