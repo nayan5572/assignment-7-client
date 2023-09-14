@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 import { useEffect } from "react";
 import { useState } from "react";
 import Blog from "../Blog/Blog";
 
-const Blogs = () => {
+const Blogs = ({ handleTotalPrice }) => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
@@ -11,13 +12,16 @@ const Blogs = () => {
             .then(data => setBlogs(data));
     }, [])
     return (
-        <div className="md:w-2/3">
-            <h2>Blogs: {blogs.length}</h2>
+        <div className="md:w-2/3 grid grid-cols-3 gap-6">
             {
-                blogs.map(blog=> <Blog key={blog.id} blog={blog}></Blog>)
+                blogs.map(blog => <Blog key={blog.id} blog={blog} handleTotalPrice={handleTotalPrice}></Blog>)
             }
         </div>
     );
 };
+
+Blogs.propTypes = {
+    handleTotalPrice: PropTypes.func
+}
 
 export default Blogs;

@@ -12,7 +12,7 @@
         "cover": "https://i.ibb.co/VMJXfXS/Rectangle-2-3.png",
         "title": "Introduction to Algorithms",
         "description": "Join the crew of the starship Phoenix as they venture into the far reaches of the universe, encountering alien civilizations and cosmic mysteries.",
-        "price": "$24.99",
+        "price": 2500,
         "credit_hours": 1
     },
     {
@@ -60,7 +60,7 @@
         "cover": "https://i.ibb.co/3vsP350/Rectangle-2-1.png",
         "title": "Database (MySQL)",
         "description": "Learn the art of financial success with expert advice on investing, budgeting, and building a secure financial future.",
-        "price": "$34.99",
+        "price": 19000,
         "credit_hours": 4
     },
     {
@@ -68,7 +68,7 @@
         "cover": "https://i.ibb.co/c3f09gp/Rectangle-2-6.png",
         "title": "Problem-Solving Part",
         "description": "Embark on thrilling hiking expeditions to remote wilderness areas and discover the breathtaking beauty of the natural world.",
-        "price": "$26.99",
+        "price": 23000,
         "credit_hours": 2
     }
 ]
