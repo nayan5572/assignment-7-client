@@ -13,30 +13,45 @@ function App() {
   // click title bookMark
   const [bookMark, setBookMark] = useState([]);
 
-  // const handleAddToBookMark = book => {
-  //   // const newBook = [...bookMark, book];
-  //   // setBookMark(newBook);
-  // }
+  const [remaining, setRemain] = useState(0);
 
-  // button is for total price
-  const handleTotalPrice = (price, credit_hours, book) => {
-    setTotalPrice(totalPrice + price);
-    setHour(hour + credit_hours);
+  // const [cost, setTotalCost]=useState(0);
 
-    // select course title
-    const newBook = [...bookMark, book];
-    setBookMark(newBook);
+  // selected cart click button
+  const handleAddToBookMark = book => {
 
-    // const remainingBookMarks = bookMark.filter(bookmark => bookmark.id !== id);
-    // setBookMark(remainingBookMarks);
+    const myBtn = bookMark.find((myCourse) => myCourse.id == book.id);
+
+    let count = book.credit_hours;
+    let itemPrice = book.price;
+
+    if (myBtn) {
+      return alert('Already Added');
+    }
+    else {
+      bookMark.forEach((item) => {
+        count = count + item.credit_hours;
+      });
+
+      // remaining 20 hour
+      const totalRemaining = 20 - count;
+      setHour(count);
+      setRemain(totalRemaining);
+      setBookMark([...bookMark, book]);
+
+      // click calculate total price
+     const newPrice = totalPrice + itemPrice;
+     setTotalPrice(newPrice);
+    }
   }
+
 
   return (
     <>
       <Header></Header>
       <div className='md:flex mx-12 pt-12'>
-        <Blogs handleTotalPrice={handleTotalPrice}></Blogs>
-        <BookMarks totalPrice={totalPrice} hour={hour} bookMark={bookMark}></BookMarks>
+        <Blogs handleAddToBookMark={handleAddToBookMark}></Blogs>
+        <BookMarks totalPrice={totalPrice} hour={hour} bookMark={bookMark} remaining={remaining}></BookMarks>
       </div>
     </>
   )
