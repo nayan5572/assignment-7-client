@@ -18,7 +18,7 @@ const Blog = ({ blog, handleTotalPrice }) => {
                         <p>Credit: {credit_hours}hr</p>
                     </div>
                     <div className="card-actions">
-                        <button onClick={() => handleTotalPrice(price, credit_hours)} className="btn btn-primary w-full bg-[#2F80ED] border-0 text-white hover:bg-[#2F80ED] text-[18px] font-semibold">Select</button>
+                        <button onClick={() => handleTotalPrice(price, credit_hours, title)} className="btn btn-primary w-full bg-[#2F80ED] border-0 text-white hover:bg-[#2F80ED] text-[18px] font-semibold">Select</button>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@ const Blog = ({ blog, handleTotalPrice }) => {
 
 Blog.propTypes = {
     blog: PropTypes.object.isRequired,
-    handleTotalPrice: PropTypes.func
+    handleTotalPrice: PropTypes.func,
 }
 
 export default Blog;

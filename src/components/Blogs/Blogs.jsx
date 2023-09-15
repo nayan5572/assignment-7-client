@@ -21,7 +21,8 @@ const Blogs = ({ handleTotalPrice }) => {
 };
 
 Blogs.propTypes = {
-    handleTotalPrice: PropTypes.func
+    handleTotalPrice: PropTypes.func,
+    handleAddToBookMark: PropTypes.func
 }
 
 export default Blogs;

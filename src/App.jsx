@@ -10,11 +10,25 @@ function App() {
   const [totalPrice, setTotalPrice] = useState(0);
   // total credit hour
   const [hour, setHour] = useState(0);
+  // click title bookMark
+  const [bookMark, setBookMark] = useState([]);
+
+  // const handleAddToBookMark = book => {
+  //   // const newBook = [...bookMark, book];
+  //   // setBookMark(newBook);
+  // }
 
   // button is for total price
-  const handleTotalPrice = (price, credit_hours) => {
+  const handleTotalPrice = (price, credit_hours, book) => {
     setTotalPrice(totalPrice + price);
     setHour(hour + credit_hours);
+
+    // select course title
+    const newBook = [...bookMark, book];
+    setBookMark(newBook);
+
+    // const remainingBookMarks = bookMark.filter(bookmark => bookmark.id !== id);
+    // setBookMark(remainingBookMarks);
   }
 
   return (
@@ -22,7 +36,7 @@ function App() {
       <Header></Header>
       <div className='md:flex mx-12 pt-12'>
         <Blogs handleTotalPrice={handleTotalPrice}></Blogs>
-        <BookMarks totalPrice={totalPrice} hour={hour}></BookMarks>
+        <BookMarks totalPrice={totalPrice} hour={hour} bookMark={bookMark}></BookMarks>
       </div>
     </>
   )
