@@ -3,6 +3,7 @@ import './App.css'
 import Blogs from './components/Blogs/Blogs'
 import BookMarks from './components/BookMarks/BookMarks'
 import Header from './components/Header/Header'
+import Swal from 'sweetalert2';
 
 function App() {
 
@@ -15,8 +16,6 @@ function App() {
 
   const [remaining, setRemain] = useState(0);
 
-  // const [cost, setTotalCost]=useState(0);
-
   // selected cart click button
   const handleAddToBookMark = book => {
 
@@ -26,7 +25,12 @@ function App() {
     let itemPrice = book.price;
 
     if (myBtn) {
-      return alert('Already Added');
+      // return alert('Already Added');
+      Swal.fire({
+        title: `${book.title} Already Added`,
+        icon: 'warning', // You can change this to 'warning', 'error', etc.
+        confirmButtonText: 'OK',
+      });
     }
     else {
       bookMark.forEach((item) => {
@@ -35,13 +39,21 @@ function App() {
 
       // remaining 20 hour
       const totalRemaining = 20 - count;
-      setHour(count);
-      setRemain(totalRemaining);
-      setBookMark([...bookMark, book]);
 
       // click calculate total price
-     const newPrice = totalPrice + itemPrice;
-     setTotalPrice(newPrice);
+      const newPrice = totalPrice + itemPrice;
+      if (count > 20) {
+        Swal.fire({
+          title: `Your Time is End`,
+          icon: 'warning', // You can change this to 'warning', 'error', etc.
+          confirmButtonText: 'OK',
+        });
+      } else {
+        setHour(count);
+        setRemain(totalRemaining);
+        setBookMark([...bookMark, book]);
+      }
+      setTotalPrice(newPrice);
     }
   }
 

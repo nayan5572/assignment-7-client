@@ -19,8 +19,6 @@ const Blog = ({ blog, handleAddToBookMark }) => {
                     </div>
                     <div className="card-actions">
                         <button onClick={() => handleAddToBookMark(blog)} className="btn btn-primary w-full bg-[#2F80ED] border-0 text-white hover:bg-[#2F80ED] text-[18px] font-semibold">Select</button>
-                        {/* price, credit_hours, title */} 
-                        {/* onClick={() => {handleTotalPrice(price, credit_hours); handleAddToBookMark(blog);}} */}
                     </div>
                 </div>
             </div>
