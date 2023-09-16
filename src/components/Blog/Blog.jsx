@@ -11,10 +11,10 @@ const Blog = ({ blog, handleAddToBookMark }) => {
                 <div className="card-body">
                     <h2 className="card-title text-center">{title}</h2>
                     <p>{description}</p>
-                    <div className='flex'>
-                        <span className='mr-[12px]'><BsCurrencyDollar /></span>
+                    <div className='flex items-center'>
+                        <span className='mr-[12px] text-2xl'><BsCurrencyDollar /></span>
                         <p>Price: {price}</p>
-                        <span className='mr-[12px]'><HiOutlineBookOpen /></span>
+                        <span className='mr-[12px] text-2xl'><HiOutlineBookOpen /></span>
                         <p>Credit: {credit_hours}hr</p>
                     </div>
                     <div className="card-actions">

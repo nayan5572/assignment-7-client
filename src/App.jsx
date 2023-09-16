@@ -44,7 +44,7 @@ function App() {
       const newPrice = totalPrice + itemPrice;
       if (count > 20) {
         Swal.fire({
-          title: `Your Time is End`,
+          title: `Your Remaining Time is End`,
           icon: 'warning', // You can change this to 'warning', 'error', etc.
           confirmButtonText: 'OK',
         });
@@ -61,7 +61,7 @@ function App() {
   return (
     <>
       <Header></Header>
-      <div className='md:flex mx-12 pt-12'>
+      <div className='lg:flex lg:gap-5 justify-center pt-12'>
         <Blogs handleAddToBookMark={handleAddToBookMark}></Blogs>
         <BookMarks totalPrice={totalPrice} hour={hour} bookMark={bookMark} remaining={remaining}></BookMarks>
       </div>

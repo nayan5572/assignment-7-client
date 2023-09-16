@@ -3,7 +3,7 @@
         "id": 12345,
         "cover": "https://i.ibb.co/MgTmKhp/Rectangle-2-2.png",
         "title": "Introduction to C Programming",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "description": "C programming is a widely used and influential programming language that forms the basis for many other modern programming languages.:",
         "price": 1500,
         "credit_hours": 2
     },
@@ -11,7 +11,7 @@
         "id": 67890,
         "cover": "https://i.ibb.co/VMJXfXS/Rectangle-2-3.png",
         "title": "Introduction to Algorithms",
-        "description": "Join the crew of the starship Phoenix as they venture into the far reaches of the universe, encountering alien civilizations and cosmic mysteries.",
+        "description": "Algorithms are essential in computer science and programming. They are step-by-step procedures or sets of rules used to perform specific tasks or solve particular problems.",
         "price": 2500,
         "credit_hours": 1
     },
@@ -19,7 +19,7 @@
         "id": 24680,
         "cover": "https://i.ibb.co/6H7y2ct/Rectangle-2-4.png",
         "title": "Introduction to C++ for DSA",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "description": "C++ is an extension of the C programming language with added support for object-oriented programming (OOP).",
         "price": 25000,
         "credit_hours": 2
     },
@@ -27,7 +27,7 @@
         "id": 13579,
         "cover": "https://i.ibb.co/NKDPQ10/Rectangle-3.png",
         "title": "Basic Data Structures",
-        "description": "Unlock the secrets of gourmet cooking with this comprehensive guide to creating mouthwatering dishes that will impress your guests.",
+        "description": "Basic data structures are fundamental building blocks in computer science and programming.",
         "price": 1000,
         "credit_hours": 10
     },
@@ -35,7 +35,7 @@
         "id": 98765,
         "cover": "https://i.ibb.co/HKKVrgM/Rectangle-2.png",
         "title": "Introduction to OOP Python",
-        "description": "Travel back in time with this historical exploration of ancient civilizations, epic battles, and the rise and fall of empires.",
+        "description": "Object-Oriented Programming (OOP) is a programming paradigm that is widely used in Python. It revolves around the concept of objects, which are instances of classes.",
         "price": 35000,
         "credit_hours": 5
     },
@@ -43,7 +43,7 @@
         "id": 54321,
         "cover": "https://i.ibb.co/sKqHKFp/Rectangle-2-5.png",
         "title": "Software Engineering",
-        "description": "Delve into the fascinating world of neuroscience and psychology to unravel the complexities of human behavior and consciousness.",
+        "description": "Software engineering is a systematic and disciplined approach to designing, developing, testing, and maintaining software systems.",
         "price": 19000,
         "credit_hours": 5
     },
@@ -51,7 +51,7 @@
         "id": 11223,
         "cover": "https://i.ibb.co/t3cVzFJ/Rectangle-3-1.png",
         "title": "AWS, Cloud Computing",
-        "description": "Join Alice on a whimsical journey through Wonderland, where she encounters peculiar creatures and surreal landscapes.",
+        "description": "Amazon Web Services (AWS) is a comprehensive and widely adopted cloud computing platform offered by Amazon.com.",
         "price": 23000,
         "credit_hours": 2
     },
@@ -59,7 +59,7 @@
         "id": 998877,
         "cover": "https://i.ibb.co/3vsP350/Rectangle-2-1.png",
         "title": "Database (MySQL)",
-        "description": "Learn the art of financial success with expert advice on investing, budgeting, and building a secure financial future.",
+        "description": "MySQL is a popular open-source relational database management system (RDBMS) that is widely used for building and managing relational databases.",
         "price": 19000,
         "credit_hours": 4
     },
@@ -67,7 +67,7 @@
         "id": 55555,
         "cover": "https://i.ibb.co/c3f09gp/Rectangle-2-6.png",
         "title": "Problem-Solving Part",
-        "description": "Embark on thrilling hiking expeditions to remote wilderness areas and discover the breathtaking beauty of the natural world.",
+        "description": "Problem-solving is a crucial skill in various aspects of life, including academics, work, and personal growth.",
         "price": 23000,
         "credit_hours": 2
     }
